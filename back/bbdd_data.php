@@ -8,7 +8,6 @@ $conexion = mysqli_connect($db_host,$db_user,$db_password, $db_name) or die("No 
 
 
 if(mysqli_connect_errno()){
-    echo "".mysqli_connect_error()."";
     error_ddbb();
 }
 
@@ -17,6 +16,8 @@ if(mysqli_connect_errno()){
 mysqli_select_db($conexion, $db_name);
 mysqli_set_charset($conexion,"utf8");
 
+
+// query debug 
 $query = query1();
 $output = mysqli_query($conexion,"$query");
 
