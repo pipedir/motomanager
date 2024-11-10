@@ -1,0 +1,107 @@
+<?php
+
+ 
+    require("class.php");
+    require("database.php");
+
+
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta MotoManager</title>
+</head>
+
+
+
+
+<body>
+    
+
+    <!-- division debug backend --> 
+    <div>
+        <h3>Division debug</h3>
+    </div>
+
+
+    <!-- Division login debug -->
+
+    <div>
+
+    <p>
+            <label for="selectuser"></label>
+            <select name="selectuser" id="selectuser">
+                <option value="usuario">Usuario</option>
+                <option value="admin">Admin</option>
+                <option value="trabajador">Trabajador</option>
+                <option value="cliente">Cliente</option>
+            </select>
+        </p>
+
+
+        <p>
+        <form name= "login" method ="post" action="/back/login.php">
+
+        <label for="user">User: </label>
+        <input type="text" name="user" id="user">
+        <br>
+        <label for="pass">Pass: </label>
+        <input type="text" name="pass" id="pass">
+        </form>
+        </p>
+
+     
+        <p>
+            <input type="submit" name="button" id="button"
+            value="Send">
+            <br>
+        </p>
+
+    </div>
+
+    <div>
+
+        <form action="database.php"
+               method="get">
+        <label for="">Palabra clave: <input type="text" name="get"></label>
+        <input type="submit" name="busca" value="Dale!">
+    </form>
+
+    
+    </div>
+
+
+        
+        
+
+
+    </div>
+
+    <!-- debug output -->
+
+    <?php
+
+
+
+
+
+
+    
+    ?>
+
+
+    <div>
+
+    </div>
+
+
+
+</body>
+
+</html>
